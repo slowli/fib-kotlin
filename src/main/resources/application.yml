@@ -1,0 +1,8 @@
+app:
+  info:
+    name: Fibonacci numbers service
+    description: >
+      Simple RESTful service that computes Fibonacci numbers.
+    version: 0.1.0
+    license: Apache-2.0
+    licenseUrl: https://www.apache.org/licenses/LICENSE-2.0

@@ -1,0 +1,12 @@
+schema {
+  query: Query
+}
+
+type Query {
+  indexed(index: Int!): RenderedInteger!
+}
+
+type RenderedInteger {
+  value: String!
+  bitLength: Int!
+}

@@ -1,0 +1,3 @@
+query {
+  indexed(index: 10) { value }
+}
