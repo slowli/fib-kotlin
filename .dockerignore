@@ -1,0 +1,5 @@
+# Ignore everything except for the source files
+*
+!/src
+!/pom.xml
+!/.editorconfig

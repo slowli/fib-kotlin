@@ -1,0 +1,27 @@
+# Local Docker Compose setup for the service.
+#
+# The service image should be built as follows:
+#
+#     mvn
+#     docker build -t fib-service .
+
+version: '3.2'
+services:
+  redis:
+    image: redis:5.0.9-alpine
+    networks:
+      - main
+
+  fib-service:
+    image: fib-service
+    depends_on:
+      - redis
+    networks:
+      - main
+    ports:
+      - 8080:8080
+    command: >
+      java -jar /usr/local/service.jar --spring.redis.host=redis
+
+networks:
+  main: {}

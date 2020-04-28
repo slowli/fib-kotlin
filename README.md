@@ -18,6 +18,20 @@ Run the `Application` class (e.g., via IDEA). On success, the site should
 be available on [`localhost`](http://localhost:8080/), which should display
 auto-generated Swagger API docs, where you can check that the service works properly.
 
+### Docker
+
+Build the service image using
+
+```bash
+docker build -t fib-service .
+```
+
+...and then run it locally using Docker Compose:
+
+```bash
+docker-compose up -d fib-service 
+```
+
 ## License
 
 Licensed under [the Apache 2.0 license](LICENSE).
