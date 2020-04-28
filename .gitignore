@@ -1,5 +1,6 @@
 .mvn
 target/
+/mvn*
 !**/src/main/**
 !**/src/test/**
 
