@@ -1,9 +1,4 @@
 # Local Docker Compose setup for the service.
-#
-# The service image should be built as follows:
-#
-#     mvn
-#     docker build -t fib-service .
 
 version: '3.2'
 services:
